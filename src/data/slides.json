@@ -1,0 +1,53 @@
+[
+    {
+        "image": "https://hyperpc.ru/images/product/lumen/landing_v4/hyperpc-lumen-plus-black-alt_webp.jpg",
+        "title": "Lumen",
+        "processor": "Intel Core i5 12500",
+        "graphics cards": "Nvidia GeForce RTX 4070",
+        "ram": "32 GB",
+        "ssd": "2 Tb",
+        "water cooling": "Water cooling",
+        "price": "2700"
+        
+    },
+    {
+        "image": "https://hyperpc.ru/images/product/volt/pc/hyperpc-volt.jpg",
+        "title": "Volt",
+        "processor": "Intel Core i7 12700",
+        "graphics cards": "Nvidia GeForce RTX 4080",
+        "ram": "32 GB",
+        "ssd": "2 Tb",
+        "water cooling": "Water cooling",
+        "price": "2900"
+    },
+    {
+        "image": "https://hyperpc.ru/images/product/invader/pc/hyperpc-invader.jpg",
+        "title": "Volt ultra",
+        "processor": "Intel Core i9 13900",
+        "graphics cards": "Nvidia GeForce RTX 4090",
+        "ram": "32 GB",
+        "ssd": "2 Tb",
+        "water cooling": "Water cooling",
+        "price": "3200"
+    },
+    {
+        "image": "https://hyperpc.ru/images/product/enthusiast/gaming-s/pc/white/upd-2/hyperpc-gaming-s-alt-white.jpg",
+        "title": "Cyber",
+        "processor": "Intel Core i9 13900",
+        "graphics cards": "Nvidia GeForce RTX 4090ti",
+        "ram": "32 GB",
+        "ssd": "2 Tb",
+        "water cooling": "Water cooling",
+        "price": "3000"
+    },
+    {
+        "image": "https://hyperpc.ru/images/product/concept/lumen/pc/hyperpc-concept-ultimate-alt.jpg",
+        "title": "Lumen ultra",
+        "processor": "Intel Core i9 13900",
+        "graphics cards": "Nvidia GeForce RTX 4080ti",
+        "ram": "32 GB",
+        "ssd": "2 Tb",
+        "water cooling": "Water cooling",
+        "price": "2850"
+    }
+]
