@@ -29,7 +29,7 @@ const NavbarMain = () => {
             link: '/computer&office'
         },
     ]
-
+    
     const [open, setOpen] = useState(false);
 
     return (
@@ -37,13 +37,13 @@ const NavbarMain = () => {
             <header className="bg-[#212529] text-violet-100 fixed z-10 w-[100%]">
                 <nav className="container flex justify-between items-center w-[100%] px-5">
                     <div className="pl-4">
-                        <img className="w-40 h-32" src="/logo.png" alt="" />
+                        <NavLink to='/'>
+                            <img className="w-40 h-32" src="/logo.png" alt="" />
+                        </NavLink>
                     </div>
-
                     <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-13 cursor-pointer lg:hidden">
                         {open === false ? <AiOutlineMenu /> : <AiOutlineClose />}
                     </div>
-
                     <ul className="lg:flex lg:items-center gap-4 hidden">
                         {
                             navLinks.map((link, index) => (
@@ -53,10 +53,12 @@ const NavbarMain = () => {
                             ))
                         }
                     </ul>
-
                     <div className="flex items-center gap-[3vw] pr-4">
                         <NavLink className='hover:text-violet-500 transition duration-500 ease-in-out' to='/basket'><AiOutlineShoppingCart className="text-3xl" /></NavLink>
+                        <NavLink to='/signIn'>
                         <button className="transition duration-500 ease-in-out bg-violet-800 px-5 py-2 rounded-full hover:bg-violet-500">Sign In</button>
+
+                        </NavLink>
                     </div>
                 </nav>
 

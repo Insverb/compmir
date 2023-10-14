@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import slides from './../data/slides.json';
+import cards from './../data/cards.json';
 import 'swiper/css';
-import {GiProcessor} from 'react-icons/gi'
+
 
 
 const Slider = () => {
@@ -18,7 +18,7 @@ const Slider = () => {
                     }
                   }}
         >   
-            {slides.map((slide) => (
+            {cards.map((slide) => (
                 <SwiperSlide key={slide.image}>
                     <div className='rounded-3xl bg-[#131313] pb-8 px-16'>
                       <img className='rounded-3xl mx-auto sm:h-[400px]' src={slide.image} alt="" />

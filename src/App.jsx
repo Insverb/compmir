@@ -8,6 +8,8 @@ import Pc from './pages/Pc';
 import Laptops from './pages/Laptops';
 import Components from './pages/Components';
 import ComputerOffice from './pages/ComputerOffice';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 function App() {
 
@@ -23,6 +25,9 @@ function App() {
               <Route path='/components' element={<Components />}/>
               <Route path='/computer&office' element={<ComputerOffice />}/>
               <Route path='/map' element={<Map />}/>
+              <Route path='/signIn' element={<SignIn />}/>
+              <Route path='/signUp' element={<SignUp />}/>
+
           </Routes>
           <Footer />
         </Router>

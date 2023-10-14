@@ -4,11 +4,11 @@
         "title": "Lumen",
         "processor": "Intel Core i5 12500",
         "graphics cards": "Nvidia GeForce RTX 4070",
-        "ram": "32 GB",
-        "ssd": "2 Tb",
+        "ram": "16 GB",
+        "ssd": "1 Tb",
         "water cooling": "Water cooling",
-        "price": "2700"
-        
+        "price": "2700",
+        "id": 1
     },
     {
         "image": "https://hyperpc.ru/images/product/volt/pc/hyperpc-volt.jpg",
@@ -16,9 +16,10 @@
         "processor": "Intel Core i7 12700",
         "graphics cards": "Nvidia GeForce RTX 4080",
         "ram": "32 GB",
-        "ssd": "2 Tb",
+        "ssd": "1 Tb",
         "water cooling": "Water cooling",
-        "price": "2900"
+        "price": "2900",
+        "id": 2
     },
     {
         "image": "https://hyperpc.ru/images/product/invader/pc/hyperpc-invader.jpg",
@@ -28,7 +29,8 @@
         "ram": "32 GB",
         "ssd": "2 Tb",
         "water cooling": "Water cooling",
-        "price": "3200"
+        "price": "3200",
+        "id": 3
     },
     {
         "image": "https://hyperpc.ru/images/product/enthusiast/gaming-s/pc/white/upd-2/hyperpc-gaming-s-alt-white.jpg",
@@ -38,7 +40,8 @@
         "ram": "32 GB",
         "ssd": "2 Tb",
         "water cooling": "Water cooling",
-        "price": "3000"
+        "price": "3000",
+        "id": 4
     },
     {
         "image": "https://hyperpc.ru/images/product/concept/lumen/pc/hyperpc-concept-ultimate-alt.jpg",
@@ -48,6 +51,7 @@
         "ram": "32 GB",
         "ssd": "2 Tb",
         "water cooling": "Water cooling",
-        "price": "2850"
+        "price": "2850",
+        "id": 5
     }
 ]

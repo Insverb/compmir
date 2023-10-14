@@ -1,12 +1,11 @@
 import Slider from "../UI/Slider";
-import slides from './../data/slides.json';
+import cards from './../data/cards.json';
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
     return (
         <div className="container relative mx-auto p-0">
            
-
             <div className="relative">
             <div className="absolute w-full h-full bg-black/[0.4] top-0 left-0"></div>
                     <video src="./video.mp4" autoPlay muted loop />
@@ -17,7 +16,7 @@ const Home = () => {
             </div>
 
             <div className="container mx-auto pt-[50px] sm:px-[100px] h-auto">
-                <Slider slides={slides}/>
+                <Slider slides={cards}/>
             </div>
 
             <div className='container mx-auto'>
