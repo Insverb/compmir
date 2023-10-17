@@ -5,7 +5,7 @@ const ProcCheckbox = (props) => (
   <div>
     <Formik
       initialValues={{
-        picked: 'all',
+        processor: 'all',
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
@@ -16,23 +16,23 @@ const ProcCheckbox = (props) => (
         <Form {...props}>
             <div className='flex flex-col' role="group" aria-labelledby="my-radio-group">
                 <label>
-                <Field type="radio" name="picked" value="all" />
+                <Field type="radio" name="processor" value="all" />
                 All
                 </label>
                 <label>
-                <Field type="radio" name="picked" value="i5" />
+                <Field type="radio" name="processor" value="i5" />
                 Intel Core i5
                 </label>
                 <label>
-                <Field type="radio" name="picked" value="i7" />
+                <Field type="radio" name="processor" value="i7" />
                 Intel Core i7
                 </label>
                 <label>
-                <Field type="radio" name="picked" value="i9" />
+                <Field type="radio" name="processor" value="i9" />
                 Intel Core i9
                 </label>
             </div>
-          <div>Picked: {values.picked}</div>
+          <div>Picked: {values.processor}</div>
         </Form>
       )}
     </Formik>

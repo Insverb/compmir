@@ -10,7 +10,6 @@ import { BsGooglePlay } from 'react-icons/bs'
 import { BsApple } from 'react-icons/bs'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 
-
 const Footer = () => {
     return (
         <footer className="bg-[#212529]">

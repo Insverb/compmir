@@ -1,14 +1,17 @@
-import cards from '../data/cards.json';
-
+import { useState } from 'react';
+import cardList from '../data/cards.json';
 
 const ProductList = (props) => {
+
+    const [cards, setCards] = useState(cardList);
+
     return (
         <div {...props}>
             {cards.map((card) => (
                 <div key={card.id}>
                     <div className='rounded-3xl bg-[#131313] pb-6 px-8'>
                         <img className='rounded-3xl w-[200px] h-[100px] mx-auto sm:h-[220px]' src={card.image} alt="" />
-                        <hr className='mb-2'/>
+                        <hr className='mb-2' />
 
                         <div className="flex justify-between items-center mb-5 mt-4">
                             <div className='text-xl'>{card.title}</div>

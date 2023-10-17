@@ -27,7 +27,6 @@ function App() {
               <Route path='/map' element={<Map />}/>
               <Route path='/signIn' element={<SignIn />}/>
               <Route path='/signUp' element={<SignUp />}/>
-
           </Routes>
           <Footer />
         </Router>
