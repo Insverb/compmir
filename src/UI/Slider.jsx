@@ -2,8 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import cards from './../data/cards.json';
 import 'swiper/css';
 
-
-
 const Slider = () => {
 
     return (
@@ -19,7 +17,7 @@ const Slider = () => {
                   }}
         >   
             {cards.map((slide) => (
-                <SwiperSlide key={slide.image}>
+                <SwiperSlide key={slide.id}>
                     <div className='rounded-3xl bg-[#131313] pb-8 px-16'>
                       <img className='rounded-3xl mx-auto sm:h-[400px]' src={slide.image} alt="" />
                       <hr className='mb-4'/>

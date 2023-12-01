@@ -8,11 +8,11 @@ const Home = () => {
            
             <div className="relative">
             <div className="absolute w-full h-full bg-black/[0.4] top-0 left-0"></div>
-                    <video src="./video.mp4" autoPlay muted loop />
-                    <div className="flex flex-col items-center justify-center absolute top-56 w-[100%] text-white text-2xl">
-                        <div className="mb-5 text-3xl text-slate-300">Superiority of strength</div>
-                        <div className="text-5xl">CYBER</div>
-                    </div>
+                <video src="./video.mp4" autoPlay muted loop />
+                <div className="flex flex-col items-center justify-center absolute top-56 w-[100%] text-white text-2xl">
+                    <div className="mb-5 text-3xl text-slate-300">Superiority of strength</div>
+                    <div className="text-5xl">CYBER</div>
+                </div>
             </div>
 
             <div className="container mx-auto pt-[50px] sm:px-[100px] h-auto">
