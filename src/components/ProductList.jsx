@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { setProduct } from "../../redux/actions";
 
 
-const ProductList = ({ currentItems}) => {
+const ProductList = ({ currentItems }) => {
 
     const dispatch = useDispatch();
 

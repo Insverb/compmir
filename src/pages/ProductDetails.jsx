@@ -1,6 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, Element } from 'react-scroll';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './../../css/swiper.css'
+
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
 
 const ProductDetail = () => {
     const product = useSelector((state) => state.product.product); // redux
@@ -50,7 +62,7 @@ const ProductDetail = () => {
                             to="design" 
                             spy={true} 
                             smooth={true} 
-                            offset={-150} 
+                            offset={-170} 
                             duration={500} 
                             onSetActive={handleSetActive}
                             >
@@ -64,7 +76,7 @@ const ProductDetail = () => {
                             to="customization" 
                             spy={true} 
                             smooth={true} 
-                            offset={-60} 
+                            offset={-170} 
                             duration={500} 
                             onSetActive={handleSetActive}
                             >
@@ -73,10 +85,34 @@ const ProductDetail = () => {
                     </li>
                 </ul>
                 </div>
+
             <Element name="details" className='container mx-auto bg-[#111111]'>
                 <div className='pl-16'>
                     <div className='flex h-[500px] items-center'>
-                        <img className='w-[700px] h-[450px]' src={product.image} />
+                        <div className='w-[500px]'>
+                            <Swiper
+                                slidesPerView={1}
+                                spaceBetween={30}
+                                loop={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                navigation={true}
+                                modules={[Pagination, Navigation]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                                <SwiperSlide><img className='p-5' src={product.image} /></SwiperSlide>
+                            </Swiper>
+                            
+                        </div>
                         <div className='w-full flex justify-center items-center'>
                             <div>
                                 <div className="text-5xl text-center">{product.title} </div>

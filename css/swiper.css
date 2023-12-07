@@ -1,0 +1,23 @@
+/* Навигация Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #5b21b6; 
+}
+
+/* Навигация Swiper при наведении */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #5b21b6; 
+}
+
+
+/* Пагинация Swiper */
+.swiper-pagination-bullet-active {
+    background-color: #5b21b6; 
+}
+
+.swiper-pagination-bullet {
+    background-color: #5b21b6; 
+}
+
+

@@ -12,12 +12,12 @@ const Pc = () => {
     // Пагинация
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(3);
-
+    
     // Определение индексов первого и последнего товара на текущей странице
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     let currentItems = cards.slice(indexOfFirstItem, indexOfLastItem);
-
+    
     const handleSortChange = (type) => {
         setSortType(type);
         // Создаем копию массива cards для обновления state

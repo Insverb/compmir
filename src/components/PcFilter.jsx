@@ -1,7 +1,6 @@
-import React from 'react'
 import { useState, useEffect } from "react";
 
-export default function PcFilter({cardList, setCards, setCurrentPage}) {
+export default function PcFilter({ cardList, setCards, setCurrentPage }) {
     
     const [selectedProcessor, setSelectedProcessor] = useState([])
     const [selectedGPU, setSelectedGPU] = useState([]);
@@ -17,14 +16,14 @@ export default function PcFilter({cardList, setCards, setCurrentPage}) {
             (selectedRAM.length === 0 || selectedRAM.includes(cards.ram)) &&
             (selectedStorage.length === 0 || selectedStorage.includes(cards.storage))
           ) {
-            return true;
+            return true
           }
           return false;
         });
         setCards(filteredProducts);
         setCurrentPage(1)   // Для обновления пагинации (если убрать то будет ошибка отображения при фильтрации)
       }, [selectedProcessor, selectedGPU, selectedRAM, selectedStorage]);
-
+      
       const handleProcessorChange = (value) => {
         setSelectedProcessor((prev) => {
           if (prev.includes(value)) {
@@ -34,7 +33,7 @@ export default function PcFilter({cardList, setCards, setCurrentPage}) {
           }
         });
       };
-
+      
       const handleGPUChange = (value) => {
         setSelectedGPU((prev) => {
             if (prev.includes(value)) {
